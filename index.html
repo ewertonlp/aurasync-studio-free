@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>AuraSync Studio Free | Crie seu primeiro carrossel</title><meta content="Crie gratuitamente um carrossel de três slides, com fotos, dois layouts e exportação PNG." name="description"/><link href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2214%22%20fill%3D%22%23102c36%22/%3E%3Cpath%20d%3D%22M10%2048L24%2015L35%2039L46%2018L56%2048%22%20fill%3D%22none%22%20stroke%3D%22%2362ddc9%22%20stroke-width%3D%226%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22/%3E%3C/svg%3E" rel="icon"/><meta content="#102c36" name="theme-color"/><meta content="AuraSync Studio Free" property="og:title"/><meta content="Experimente dois layouts e exporte três slides em PNG gratuitamente." property="og:description"/><link href="./css/style.css" rel="stylesheet"/></head><body>
+<header class="top"><div><div class="brand"><span aria-hidden="true" class="brand-icon"><svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><path d="M9 34L19 13L26 27L33 15L40 34" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4.2"></path><circle cx="34" cy="11" fill="currentColor" r="3"></circle></svg></span><span class="brand-lockup"><span class="brand-word">AuraSync <span>AI</span></span><span class="brand-product">Studio Free · Editor criativo</span></span></div></div><div class="topmark">FREE · v1.5 · Sem cadastro</div></header>
+<main class="wrap"><div class="intro"><div><h1>Crie seu primeiro carrossel gratuitamente.</h1><p>Experimente o AuraSync Studio: transforme suas fotos e informações em três slides personalizados, com prévia em tempo real e exportação PNG sem marca-d’água.</p></div><div class="banner">O conteúdo inicial é <strong>fictício</strong>. Use informações e imagens verificadas antes de publicar.</div></div>
+<section class="guide panel" id="guide">
+<div class="guide-head">
+<div class="guide-head-top">
+<div>
+<p class="eyebrow">Guia rápido</p>
+<h2>Como criar seu conteúdo em 4 etapas</h2>
+<p>Siga esta ordem para não se perder: primeiro preencha os dados e envie as fotos, depois personalize os slides, revise os textos e por fim baixe as imagens em PNG.</p>
+</div>
+<button class="btn secondary tour-trigger" id="startTour" type="button">✨ Ver tour inicial</button>
+</div>
+</div>
+<div class="guide-grid" id="guideGrid">
+<button class="guide-card current" data-go="planningPanel" data-step="1" type="button">
+<span class="step-badge">1</span>
+<strong>Informações e fotos</strong>
+<small>Abra a etapa 1, preencha os dados do projeto e adicione suas imagens.</small>
+<span class="guide-action">Abrir etapa 1 →</span>
+</button>
+<button class="guide-card" data-go="editor" data-step="2" type="button">
+<span class="step-badge">2</span>
+<strong>Edite os slides</strong>
+<small>Escolha um slide, defina a foto e personalize título, descrição e layout.</small>
+<span class="guide-action">Ir para o editor →</span>
+</button>
+<button class="guide-card" data-go="textLibrary" data-step="3" type="button">
+<span class="step-badge">3</span>
+<strong>Revise os textos</strong>
+<small>Ajuste e copie a legenda e os textos dos slides.</small>
+<span class="guide-action">Ver textos →</span>
+</button>
+<button class="guide-card" data-go="png" data-step="4" type="button">
+<span class="step-badge">4</span>
+<strong>Baixe suas artes</strong>
+<small>Exporte cada um dos três slides separadamente, em PNG de alta resolução.</small>
+<span class="guide-action">Ir para exportação →</span>
+</button>
+</div>
+<div class="next-step-box" id="nextStepBox">
+<div>
+<p class="next-step-label">Próxima ação sugerida</p>
+<strong id="nextStepTitle">Comece pela etapa 1</strong>
+<div class="next-step-text" id="nextStepText">Abra “Informações e fotografias” e adicione pelo menos uma foto para começar.</div>
+</div>
+<button class="btn" data-go="planningPanel" id="nextStepBtn" type="button">Ir agora</button>
+</div>
+</section><section class="free-offer panel" id="proInfo"><div><p class="eyebrow">Conheça a edição completa</p><h2>Mais possibilidades com o Studio Pro</h2><p>Experimente gratuitamente sem cadastro. A versão completa será disponibilizada após a preparação do lançamento comercial.</p></div><div class="free-compare"><div><strong>Free · grátis</strong><p>3 slides, 2 layouts, fotos, textos editáveis e PNG sem marca-d’água.</p></div><div><strong>Pro · em breve</strong><p>5 slides, 6 layouts, edição avançada, vídeo, ZIP e projetos reutilizáveis.</p></div></div><p class="note">Ainda não há checkout ativo. Nenhum pagamento é solicitado nesta demonstração.</p></section>
+<div class="layout">
+<details class="panel planning-panel" id="planningPanel">
+<summary class="panelhead planning-summary"><span class="planning-summary-text"><span class="eyebrow">Etapa 01 · Informações e fotografias</span><span class="planning-title">Editar dados do projeto, fotos e identidade visual</span><span class="planning-subtitle">Abra para cadastrar seu imóvel, escolher o tipo de post ou trocar fotografias.</span></span><span aria-hidden="true" class="planning-chevron">⌄</span></summary>
+<form class="fields" id="form" onsubmit="return false"><div class="field projectName"><label class="label" for="projectName">Nome do projeto</label><input id="projectName" maxlength="100" placeholder="Ex.: Campanha apartamento centro" value="Apartamento Jardim das Palmeiras"/><small class="note">Use um nome para identificar o arquivo do projeto.</small></div>
+<div class="field"><label class="label" for="postType">Tipo de conteúdo</label><select id="postType"><option value="imovel">Divulgação de imóvel</option><option value="comprador">Dica para compradores</option><option value="vendedor">Dica para proprietários</option><option value="servico">Serviços do corretor</option><option value="bairro">Bairro / região</option><option value="institucional">Apresentação profissional</option></select></div>
+<div id="propertyFields">
+<div class="section-title">Características do imóvel</div>
+<div class="twocol"><div class="field"><label class="label" for="tipo">Tipo de imóvel</label><select id="tipo"><option>Apartamento</option><option>Casa</option><option>Sobrado</option><option>Studio</option><option>Terreno</option><option>Imóvel comercial</option></select></div><div class="field"><label class="label" for="operacao">Finalidade</label><select id="operacao"><option>Venda</option><option>Locação</option></select></div></div>
+<div class="twocol"><div class="field"><label class="label" for="bairro">Bairro / região</label><input id="bairro" value="Jardim das Palmeiras"/></div><div class="field"><label class="label" for="cidade">Cidade</label><input id="cidade" value="Mogi das Cruzes"/></div></div>
+<div class="threecol"><div class="field"><label class="label" for="area">Área (m²)</label><input id="area" min="0" type="number" value="68"/></div><div class="field"><label class="label" for="quartos">Quartos</label><input id="quartos" min="0" type="number" value="2"/></div><div class="field"><label class="label" for="vagas">Vagas</label><input id="vagas" min="0" type="number" value="1"/></div></div>
+<div class="twocol"><div class="field"><label class="label" for="preco">Preço (R$)</label><input id="preco" min="0" step="1" type="number" value="485000"/></div><div class="field"><label class="label" for="codigo">Código</label><input id="codigo" value="AP-204"/></div></div>
+<div class="field"><label class="label" for="destaques">Destaques comprovados</label><textarea id="destaques">Varanda, cozinha integrada, próximo ao centro</textarea><small class="note">Separe por vírgulas. Não inclua características não verificadas.</small></div>
+</div>
+<div hidden="" id="topicFields"><div class="section-title">Briefing do conteúdo</div>
+<div class="field"><label class="label" for="assunto">Título ou assunto</label><input id="assunto" maxlength="180" value="Como se preparar para visitar um imóvel"/></div>
+<div class="field"><label class="label" for="publico">Público (opcional)</label><input id="publico" maxlength="100" value="Pessoas pesquisando imóveis"/></div>
+<div class="field"><label class="label" for="pontos">Três pontos que deseja comunicar</label><textarea id="pontos">Defina prioridades, Confira a documentação, Prepare suas perguntas</textarea><small class="note">Escreva informações verdadeiras e úteis, separadas por vírgula.</small></div>
+<div class="field"><label class="label" for="cta">Chamada para ação</label><input id="cta" maxlength="150" value="Entre em contato para tirar dúvidas"/></div>
+</div>
+<div class="section-title">Objetivo e identidade</div>
+<div class="twocol"><div class="field"><label class="label" for="objetivo">Objetivo</label><select id="objetivo"><option value="lancamento">Apresentar novidade</option><option value="visita">Estimular contato</option><option value="detalhes">Explicar detalhes</option></select></div><div class="field"><label class="label" for="tom">Tom da comunicação</label><select id="tom"><option value="direto">Direto</option><option value="consultivo">Consultivo</option><option value="elegante">Editorial</option></select></div></div>
+<div class="twocol"><div class="field"><label class="label" for="visual">Paleta-base</label><select id="visual"><option value="noturno">Editorial noturno</option><option value="areia">Areia sofisticada</option><option value="azul">Azul urbano</option></select></div><div class="field"><label class="label" for="fonte">Fonte dos slides</label><select id="fonte"><option value="system">Moderna (Arial)</option><option value="editorial">Editorial (Georgia)</option><option value="rounded">Expressiva (Trebuchet)</option><option value="condensed">Impacto (Arial Narrow)</option><option value="mono">Geométrica (Verdana)</option><option value="classic">Clássica (Palatino)</option></select></div></div>
+<div class="twocol"><div class="field"><label class="label" for="corTexto">Cor do texto</label><input id="corTexto" type="color" value="#ffffff"/></div><div class="field"><label class="label" for="corFundo">Cor do fundo / sobreposição</label><input id="corFundo" type="color" value="#142a31"/></div><div class="field"><label class="label" for="corDestaque">Cor de destaque da marca</label><input id="corDestaque" type="color" value="#ddaa73"/></div></div>
+<div class="twocol"><div class="field"><label class="label" for="formato">Tamanho da arte</label><select id="formato"><option value="4:5">Instagram 4:5 (1080 × 1350)</option><option value="9:16">Story 9:16 (1080 × 1920)</option><option value="1:1">Quadrado 1:1 (1080 × 1080)</option></select></div><div class="field"><label class="label" for="nome">Nome profissional</label><input id="nome" placeholder="Nome do corretor"/></div></div>
+<div class="twocol"><div class="field"><label class="label" for="creci">CRECI</label><input id="creci" placeholder="CRECI-SP 123456-F"/></div><div class="field"><label class="label" for="contato">Contato profissional</label><input id="contato" placeholder="WhatsApp / site"/></div></div>
+<div class="section-title">Galeria de imagens</div>
+<div class="field"><label class="label" for="fotos">Adicionar até 12 fotos (JPG, PNG, WebP)</label><input accept="image/jpeg,image/png,image/webp" id="fotos" multiple="" type="file"/><small class="note">Até 12 MB por arquivo. Fotos serão reduzidas para processamento local. Clique em uma foto para aplicá-la ao slide selecionado.</small></div>
+<div class="imgcount" id="imgcount">0 de 12 fotos carregadas</div><div aria-label="Fotos carregadas" class="assetgrid" id="gallery"></div>
+<div class="btns" style="margin-top:16px"><button class="btn secondary" id="sample" type="button">↺ Exemplo</button><button class="btn secondary" id="clearPhotos" type="button">Limpar fotos</button></div>
+</form></details>
+<section class="panel editor-panel" id="editor"><div class="workspace">
+<div class="ws-top"><div><p class="eyebrow">Etapa 02 · Estúdio visual</p><h2>Edite e acompanhe o resultado ao mesmo tempo</h2><p>Personalize título, descrição, fotos e layouts à esquerda. Veja cada mudança na prévia fixa à direita.</p></div><span class="tag">2 layouts · 3 slides · PNG</span></div>
+<div class="section-title">Editor visual — personalize os 3 slides com a prévia ao lado</div>
+<div class="slides">
+<div class="slidecontrol"><p class="eyebrow">Etapa 03 · Edição</p><h3 style="margin:0">Personalize cada slide</h3><p>Escolha o slide e edite título, descrição e a foto que aparecerá nele.</p><div class="numbers" id="slideButtons"><button aria-label="Slide 1" class="current" data-slide="0" type="button">1</button><button aria-label="Slide 2" data-slide="1" type="button">2</button><button aria-label="Slide 3" data-slide="2" type="button">3</button></div>
+<div class="field"><label class="label" for="slideTitle">Título deste slide</label><textarea id="slideTitle" maxlength="230" rows="2"></textarea></div>
+<div class="field"><label class="label" for="slideSub">Descrição deste slide</label><textarea id="slideSub" maxlength="260" rows="2"></textarea></div>
+<div class="btns"><button class="btn secondary inline-btn" id="resetSlide" type="button">Restaurar textos deste slide</button></div>
+<div class="section-divider"><label class="label" for="photoForSlide">Imagem deste slide</label><select id="photoForSlide"><option value="">Sem foto (fundo colorido)</option></select>
+<div class="slide-photo-upload"><button class="btn secondary slide-photo-button" id="addSlidePhoto" type="button">＋ Adicionar foto a este slide</button><input accept="image/jpeg,image/png,image/webp" aria-label="Selecionar foto para o slide atual" hidden="" id="slidePhotoFile" type="file"/><small class="note" id="slidePhotoHint">Selecione uma foto do computador ou use uma que já esteja na galeria. JPG, PNG ou WebP, até 12 MB; máximo de 12 imagens no projeto.</small></div></div>
+<div class="advanced" id="advanced">
+<div class="section-title">Composição e layout</div>
+<label class="label" for="layoutPreset">Modelo visual deste slide</label>
+<select id="layoutPreset"><option value="editorial">01 · Editorial fotográfico</option><option value="split">02 · Divisão elegante</option></select>
+<div aria-label="Escolher layout" class="layoutChoices" id="layoutChoices">
+<button data-layout="editorial" type="button"><span class="layout-thumb thumb-editorial"></span><span>Editorial</span></button>
+<button data-layout="split" type="button"><span class="layout-thumb thumb-split"></span><span>Dividido</span></button>
+</div>
+<div class="btns"><button class="btn secondary inline-btn" id="resetVisual" type="button">Restaurar estilo deste slide</button></div>
+</div>
+<button class="btn fullBtn" id="png" type="button">↓ Baixar slide PNG</button></div>
+<aside aria-label="Visualização permanente do slide" class="preview-column">
+<div class="preview-heading"><span aria-hidden="true" class="preview-live-dot"></span><strong>Prévia em tempo real</strong><span class="preview-live-label">Acompanha sua edição</span></div>
+<div aria-label="Prévia visual do slide" class="preview" id="preview"><canvas aria-label="Prévia real do slide" id="previewCanvas"></canvas></div>
+<div class="preview-tip">Prévia sempre visível · role apenas os controles para editar.</div>
+</aside>
+</div>
+<details class="text-library" id="textLibrary">
+<summary><span><strong>Textos e legendas da campanha</strong><small>Legenda e textos dos três slides</small></span><span aria-hidden="true" class="text-library-arrow">⌄</span></summary>
+<div class="text-library-content"><div aria-label="Formato de texto" class="tabs" id="tabs" role="tablist"><button aria-selected="true" class="tab active" data-tab="legenda" role="tab">Legenda</button><button aria-selected="false" class="tab" data-tab="carrossel" role="tab">Carrossel</button></div>
+<div class="subsection"><h3 id="outtitle">Legenda</h3><div class="btns"><button class="btn secondary inline-btn" id="copy" type="button">Copiar</button><button class="btn secondary inline-btn" id="download" type="button">Baixar TXT</button><button class="btn soft inline-btn" id="regenText" type="button">Restaurar modelo</button></div></div>
+<p class="edittop">Você pode editar este texto livremente; alterações são preservadas ao trocar de aba. "Restaurar modelo" desfaz a edição da aba atual.</p><label class="label" for="output">Texto editável</label><textarea aria-label="Editar texto de divulgação" class="output output-edit" id="output"></textarea>
+</div>
+</details>
+<div class="check" id="check"></div><div class="steps">Privacidade: fotos e dados são processados no navegador. Esta edição não salva projetos: baixe seus PNGs e textos antes de fechar a página. Revise os dados, direitos de imagem e identificação profissional antes de publicar.</div>
+</div></section>
+</div><div class="foot"><strong>AuraSync Studio Free 1.5</strong> · <a class="brand-domain" href="https://aurasyncai.com" rel="noopener noreferrer" style="color:#087e83" target="_blank">aurasyncai.com</a> · Edição local no navegador · Nenhuma postagem é automática.</div></main><div class="tour-backdrop" hidden="" id="tourBackdrop"></div>
+<div aria-labelledby="tourTitle" aria-modal="true" class="tour-popover" hidden="" id="tourPopover" role="dialog">
+<div class="tour-step" id="tourStepLabel">Etapa 1 de 7</div>
+<h3 id="tourTitle">Tour do AuraSync Studio</h3>
+<p id="tourText">Vamos conhecer a interface.</p>
+<div class="tour-actions">
+<button class="btn secondary" id="tourSkip" type="button">Pular tour</button>
+<div class="tour-nav">
+<button class="btn secondary" id="tourPrev" type="button">Voltar</button>
+<button class="btn" id="tourNext" type="button">Próximo</button>
+</div>
+</div>
+</div>
+<div aria-live="polite" class="toast" id="toast" role="status"></div>
+<script defer="" src="./js/app.js"></script></body></html>
