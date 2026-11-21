@@ -1,11 +1,26 @@
-# AuraSync Studio Free 1.5
+# AuraSync AI — Landing page + Studio Free
 
-Edição pública: 3 slides, 2 layouts, até 12 fotos, legendas, PNG individual sem marca-d’água. Sem cadastro, sem API paga. Não salva projetos nem gera vídeos ou ZIP. O código da edição Pro fica fora deste repositório.
+Site estático, sem dependências externas, com a edição Free 1.5 incluída.
 
-## Publicação
-Extraia o ZIP. Em um repositório separado, envie o conteúdo da pasta (index.html, css/, js/, vercel.json e .gitignore). Na Vercel importe o repositório, preset Other, sem build, raiz ./. Teste no domínio temporário antes de configurar um subdomínio ou substituir a versão pública anterior. Se manter o mesmo repositório atual, arquive a versão completa privadamente antes de substituir.
+## Estrutura
+- `index.html`: página de apresentação e planos.
+- `css/landing.css`, `js/landing.js`: visual e menu responsivo.
+- `assets/`: logotipo e capturas reais do editor com dados fictícios.
+- `studio/`: edição gratuita, com HTML, CSS e JavaScript próprios.
+- `vercel.json`: URLs limpas e barra final para que arquivos relativos funcionem em `/studio/`.
 
-Nenhum checkout está configurado. O bloco Pro informa que o lançamento está em preparação. Não exponha os arquivos Pro no repositório público ou no diretório servido pela Vercel.
+## Teste local
+Execute `python -m http.server 8000` na raiz e abra `http://localhost:8000/`. A edição gratuita abre em `/studio/`.
 
-## Testar
-`python -m http.server 8000` e abra http://localhost:8000. Teste tour, três slides, dois layouts, upload, texto e download.
+## Publicação GitHub + Vercel
+1. Preserve um backup do repositório e da configuração atual do domínio. Não publique a versão Pro neste repositório.
+2. Extraia o ZIP e envie o conteúdo da pasta (incluindo as subpastas), não o ZIP em si, a um repositório de teste ou ao repositório público da versão Free.
+3. Na Vercel, importe o repositório, selecione Other e deixe sem comando de build. A raiz é `./`; não configure `dist` como saída.
+4. Teste o endereço de preview: `/`, `/studio/`, menu mobile, tour, upload e PNG. Confirme que não há código Pro no deploy.
+5. Só então altere o domínio existente, se desejado. O pacote não altera seu domínio nem sua conta automaticamente.
+
+## Checkout (pendente)
+O preço Pro de R$ 49 é proposto. O botão está desativado e identificado como lançamento futuro. Quando o checkout real estiver pronto, ajuste a oferta e substitua o botão desativado por um link oficial; publique políticas comerciais e de privacidade apropriadas. A edição Pro continua separada para entrega após pagamento. Antes de vender, confirme os requisitos de idade, cadastro, tributos e termos da plataforma de vendas e da hospedagem; se necessário, peça apoio de um responsável legal.
+
+## Notas
+A Free gera 3 slides e 2 formatos de texto, sem marca-d'água e sem IA generativa. Não salva projetos completos. As imagens de exemplo são capturas do editor com dados fictícios. Não há analytics, cookies de publicidade, cadastro ou processamento de pagamentos nesta página; o editor guarda a preferência do tour no armazenamento local do navegador.
